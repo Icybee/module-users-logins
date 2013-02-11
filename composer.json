@@ -1,5 +1,5 @@
 {
-	"name": "icybee/module-users-login",
+	"name": "icybee/module-users-logins",
 	"type": "icybee-module",
 	"description": "Record users login times and IPs",
 	"keywords": ["login"],
@@ -14,8 +14,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/Icybee/module-users-login/issues",
-		"source": "https://github.com/Icybee/module-users-login"
+		"issues": "https://github.com/Icybee/module-users-logins/issues",
+		"source": "https://github.com/Icybee/module-users-logins"
 	},
 	"minimum-stability": "dev",
 	"require": {
