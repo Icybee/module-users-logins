@@ -8,6 +8,7 @@ return array
 (
 	'events' => array
 	(
+		'Icybee\Modules\Users\DeleteOperation::process:before' => $hooks . 'before_delete_user',
 		'Icybee\Modules\Users\LoginOperation::process' => $hooks . 'on_login'
 	),
 

@@ -23,7 +23,7 @@ Create a `composer.json` file and run `php composer.phar install` command to ins
 {
     "minimum-stability": "dev",
     "require": {
-		"icybee/module-users--logins": "*"
+		"icybee/module-users-logins": "*"
     }
 }
 ```
@@ -34,16 +34,25 @@ Create a `composer.json` file and run `php composer.phar install` command to ins
 
 ### Cloning the repository
 
-The package is [available on GitHub](https://github.com/Icybee/module-users--logins), its repository can be
+The package is [available on GitHub](https://github.com/Icybee/module-users-logins), its repository can be
 cloned with the following command line:
 
-	$ git clone git://github.com/Icybee/module-users--logins.git
+	$ git clone git://github.com/Icybee/module-users-logins.git
 
 
 
 
 
 ## Event hooks
+
+### `Icybee\Modules\Users\DeleteOperation::process:before`
+
+An event hook is attache to the `process:before` event of `Icybee\Modules\Users\DeleteOperation`
+instances to delete the records associate with a user, before the user is deleted.
+
+
+
+
 
 ### `Icybee\Modules\Users\LoginOperation::process`
 

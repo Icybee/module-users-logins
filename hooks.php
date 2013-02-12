@@ -11,6 +11,7 @@
 
 namespace Icybee\Modules\Users\Logins;
 
+use ICanBoogie\Operation\BeforeProcessEvent;
 use ICanBoogie\Operation\ProcessEvent;
 
 class Hooks
@@ -18,6 +19,19 @@ class Hooks
 	/*
 	 * Events
 	 */
+
+	/**
+	 * Delete login data associated with a user, before the user is deleted.
+	 *
+	 * @param BeforeProcessEvent $event
+	 * @param \Icybee\Modules\Users\DeleteOperation $target
+	 */
+	static public function before_delete_user(BeforeProcessEvent $event, \Icybee\Modules\Users\DeleteOperation $target)
+	{
+		global $core;
+
+		$core->models['users.logins']->filter_by_uid($target->key)->delete();
+	}
 
 	/**
 	 * Adds a logged entry after a user was logged in.
