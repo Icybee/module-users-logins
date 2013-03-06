@@ -2,7 +2,7 @@
 	"name": "icybee/module-users-logins",
 	"type": "icybee-module",
 	"description": "Record users login times and IPs",
-	"keywords": ["login"],
+	"keywords": ["login", "stats"],
 	"homepage": "http://icybee.org/",
 	"license": "BSD-3-Clause",
 	"authors": [
@@ -21,5 +21,8 @@
 	"require": {
 		"php": ">=5.3.0",
 		"icybee/module-installer": "*"
+	},
+	"autoload": {
+		"classmap": [ "" ]
 	}
 }
