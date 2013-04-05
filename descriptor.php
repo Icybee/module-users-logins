@@ -13,6 +13,8 @@ return array
 	(
 		'primary' => array
 		(
+			Model::ACTIVERECORD_CLASS => 'ICanBoogie\ActiveRecord',
+			Model::CLASSNAME => 'ICanBoogie\ActiveRecord\Model',
 			Model::T_SCHEMA => array
 			(
 				'fields' => array
