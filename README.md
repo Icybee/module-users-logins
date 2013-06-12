@@ -1,43 +1,6 @@
-# The "Logins" module (`users.logins`)
+# Users logins
 
-Record users login times and IPs.
-
-
-
-
-
-## Requirements
-
-This module requires the CMS [Icybee](http://icybee.org).
-
-
-
-
-
-## Installation
-
-The recommended way to install this module is through [composer](http://getcomposer.org/).
-Create a `composer.json` file and run `php composer.phar install` command to install it:
-
-```json
-{
-    "minimum-stability": "dev",
-    "require": {
-		"icybee/module-users-logins": "*"
-    }
-}
-```
-
-
-
-
-
-### Cloning the repository
-
-The package is [available on GitHub](https://github.com/Icybee/module-users-logins), its repository can be
-cloned with the following command line:
-
-	$ git clone git://github.com/Icybee/module-users-logins.git
+The Users logins module (`users.logins`) records users login times and IPs.
 
 
 
@@ -93,6 +56,43 @@ Returns the number of login for a user:
 
 echo "Number of login for {$user->name}: {$user->login_count}";
 ```
+
+
+
+
+
+## Requirements
+
+This module requires the CMS [Icybee](http://icybee.org).
+
+
+
+
+
+## Installation
+
+The recommended way to install this module is through [composer](http://getcomposer.org/).
+Create a `composer.json` file and run `php composer.phar install` command to install it:
+
+```json
+{
+	"minimum-stability": "dev",
+	"require": {
+		"icybee/module-users-logins": "*"
+	}
+}
+```
+
+
+
+
+
+### Cloning the repository
+
+The package is [available on GitHub](https://github.com/Icybee/module-users-logins), its repository can be
+cloned with the following command line:
+
+	$ git clone git://github.com/Icybee/module-users-logins.git users.logins
 
 
 
