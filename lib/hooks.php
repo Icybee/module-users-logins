@@ -54,6 +54,17 @@ class Hooks
 		);
 	}
 
+	/**
+	 * Adds the column `login_count` to the listview of the "users" module.
+	 *
+	 * @param \Icybee\ManageBlock\AlterColumnsEvent $event
+	 * @param \Icybee\ManageBlock $target
+	 */
+	static public function on_manageblock_alter_columns(\Icybee\ManageBlock\AlterColumnsEvent $event, \Icybee\ManageBlock $target)
+	{
+		$event->add(new ManageBlock\LoginCountColumn($target, 'login_count'), 'before:logged_at');
+	}
+
 	/*
 	 * Prototypes
 	 */

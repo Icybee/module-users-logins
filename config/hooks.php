@@ -9,7 +9,8 @@ return array
 	'events' => array
 	(
 		'Icybee\Modules\Users\DeleteOperation::process:before' => $hooks . 'before_delete_user',
-		'Icybee\Modules\Users\LoginOperation::process' => $hooks . 'on_login'
+		'Icybee\Modules\Users\LoginOperation::process' => $hooks . 'on_login',
+		'Icybee\Modules\Users\ManageBlock::alter_columns' => $hooks . 'on_manageblock_alter_columns'
 	),
 
 	'prototypes' => array
